@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glipearte - Locação de Artigos para Festa | Pegue e Monte</title>
+    <meta name="description" content="Locação de artigos para festa - louças, decoração e móveis. Monte seu evento conosco!">
+    <meta name="keywords" content="locação festa, artigos festa, louças, decoração, móveis, eventos">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-party-horn me-2"></i>Glipearte
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogo">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#simulador">Simulador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Transforme seu evento com nossos artigos
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Locação de louças, decoração e móveis para festas. 
+                        Sistema "Pegue e Monte" - você monta do seu jeito!
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#catalogo" class="btn btn-light btn-lg">
+                            <i class="fas fa-shopping-cart me-2"></i>Ver Catálogo
+                        </a>
+                        <a href="#simulador" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-calculator me-2"></i>Simular Orçamento
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <i class="fas fa-birthday-cake fa-10x text-white opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-primary">Por que escolher a Glipearte?</h2>
+                    <p class="lead text-muted">A melhor opção para locação de artigos para festa</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes fa-3x text-primary"></i>
+                        </div>
+                        <h4>Variedade Completa</h4>
+                        <p>Mais de 500 itens entre louças, decorações e móveis para todos os tipos de eventos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-puzzle-piece fa-3x text-primary"></i>
+                        </div>
+                        <h4>Sistema Pegue e Monte</h4>
+                        <p>Monte seu pacote personalizado escolhendo apenas os itens que você precisa.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-holding-usd fa-3x text-primary"></i>
+                        </div>
+                        <h4>Preços Competitivos</h4>
+                        <p>Os melhores preços do mercado com qualidade garantida e entrega pontual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalogo" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-primary">Nosso Catálogo</h2>
+                    <p class="lead text-muted">Explore nossa variedade de artigos para festa</p>
+                </div>
+            </div>
+            
+            <!-- Filters -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="filter-container">
+                        <button class="btn btn-outline-primary active" data-category="all">Todos</button>
+                        <button class="btn btn-outline-primary" data-category="loucas">Louças</button>
+                        <button class="btn btn-outline-primary" data-category="decoracao">Decoração</button>
+                        <button class="btn btn-outline-primary" data-category="moveis">Móveis</button>
+                        <button class="btn btn-outline-primary" data-category="iluminacao">Iluminação</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="products-grid" class="row g-4">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Simulator -->
+    <section id="simulador" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-primary">Simule seu Orçamento</h2>
+                    <p class="lead text-muted">Monte seu pacote e veja o preço em tempo real</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="simulator-container">
+                        <h4 class="mb-4">Selecione os itens desejados:</h4>
+                        <div id="selected-items" class="selected-items-container">
+                            <p class="text-muted text-center">Nenhum item selecionado ainda</p>
+                        </div>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <label for="event-date" class="form-label">Data do Evento:</label>
+                                <input type="date" id="event-date" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guest-count" class="form-label">Número de Convidados:</label>
+                                <input type="number" id="guest-count" class="form-control" min="1" value="50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="budget-summary sticky-top">
+                        <h4 class="mb-3">Resumo do Orçamento</h4>
+                        <div class="budget-details">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">R$ 0,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Taxa de Entrega:</span>
+                                <span id="delivery-fee">R$ 0,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Desconto:</span>
+                                <span id="discount">R$ 0,00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between fw-bold">
+                                <span>Total:</span>
+                                <span id="total">R$ 0,00</span>
+                            </div>
+                        </div>
+                        <button id="request-quote" class="btn btn-primary w-100 mt-3">
+                            <i class="fas fa-paper-plane me-2"></i>Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold text-primary">Entre em Contato</h2>
+                    <p class="lead text-muted">Estamos prontos para ajudar com seu evento</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Informações de Contato</h4>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <div>
+                                <strong>Telefone:</strong><br>
+                                <span>(11) 1234-5678</span>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <span>contato@glipearte.com.br</span>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <div>
+                                <strong>Endereço:</strong><br>
+                                <span>Rua das Flores, 123 - São Paulo/SP</span>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-clock text-primary me-3"></i>
+                            <div>
+                                <strong>Horário:</strong><br>
+                                <span>Seg-Sex: 8h-18h | Sáb: 8h-12h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <form id="contact-form" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nome *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Telefone *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="event-type" class="form-label">Tipo de Evento</label>
+                                <select class="form-select" id="event-type">
+                                    <option value="">Selecione...</option>
+                                    <option value="casamento">Casamento</option>
+                                    <option value="aniversario">Aniversário</option>
+                                    <option value="corporativo">Corporativo</option>
+                                    <option value="infantil">Infantil</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Descreva seu evento e necessidades..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-party-horn me-2"></i>Glipearte
+                    </h5>
+                    <p>Transformando eventos em momentos inesquecíveis com nossa variedade de artigos para festa.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Links Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50">Home</a></li>
+                        <li><a href="#catalogo" class="text-white-50">Catálogo</a></li>
+                        <li><a href="#simulador" class="text-white-50">Simulador</a></li>
+                        <li><a href="#contato" class="text-white-50">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Categorias</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Louças</a></li>
+                        <li><a href="#" class="text-white-50">Decoração</a></li>
+                        <li><a href="#" class="text-white-50">Móveis</a></li>
+                        <li><a href="#" class="text-white-50">Iluminação</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <p class="text-white-50 mb-1">
+                        <i class="fas fa-phone me-2"></i>(11) 1234-5678
+                    </p>
+                    <p class="text-white-50 mb-1">
+                        <i class="fas fa-envelope me-2"></i>contato@glipearte.com.br
+                    </p>
+                    <p class="text-white-50">
+                        <i class="fas fa-map-marker-alt me-2"></i>São Paulo/SP
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Glipearte. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
